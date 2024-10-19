@@ -96,10 +96,10 @@ class ProfilePage extends StatelessWidget {
           Expanded(
             child: ListView(
               children: [
-                buildOptionItem(Icons.location_on, 'Address', 'ensure your harvesting address'),
-                buildOptionItem(Icons.lock, 'Privacy', 'system permission change'),
-                buildOptionItem(Icons.settings, 'General', 'basic functional settings'),
-                buildOptionItem(Icons.notifications, 'Notification', 'take over the news in time'),
+                buildOptionItem(Icons.location_on, 'Address', 'ensure your ...'),
+                buildOptionItem(Icons.lock, 'Privacy', 'system permission '),
+                buildOptionItem(Icons.settings, 'General', 'basic settings'),
+                buildOptionItem(Icons.notifications, 'Notification', 'take over ...'),
               ],
             ),
           ),
@@ -158,21 +158,7 @@ class IconButtonWithLabel extends StatelessWidget {
             Text(label),
           ],
         ),
-        if (badge > 0)
-          Positioned(
-            right: 0,
-            child: Container(
-              padding: EdgeInsets.all(4),
-              decoration: BoxDecoration(
-                color: Colors.red,
-                shape: BoxShape.circle,
-              ),
-              child: Text(
-                '$badge',
-                style: TextStyle(color: Colors.white, fontSize: 12),
-              ),
-            ),
-          ),
+        
       ],
     );
   }
